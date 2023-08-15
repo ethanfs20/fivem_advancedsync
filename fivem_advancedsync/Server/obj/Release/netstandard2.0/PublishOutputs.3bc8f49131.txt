@@ -1,0 +1,4 @@
+C:\Users\Exist\Documents\Development Environment\FiveM Development\Resource Development\fivem_advancedsync\fivem_advancedsync\Server\bin\Release\netstandard2.0\publish\fivem_advancedsync.Server.net.dll
+C:\Users\Exist\Documents\Development Environment\FiveM Development\Resource Development\fivem_advancedsync\fivem_advancedsync\Server\bin\Release\netstandard2.0\publish\fivem_advancedsync.Server.deps.json
+C:\Users\Exist\Documents\Development Environment\FiveM Development\Resource Development\fivem_advancedsync\fivem_advancedsync\Server\bin\Release\netstandard2.0\publish\fivem_advancedsync.Server.net.pdb
+C:\Users\Exist\Documents\Development Environment\FiveM Development\Resource Development\fivem_advancedsync\fivem_advancedsync\Server\bin\Release\netstandard2.0\publish\CitizenFX.Core.Server.dll

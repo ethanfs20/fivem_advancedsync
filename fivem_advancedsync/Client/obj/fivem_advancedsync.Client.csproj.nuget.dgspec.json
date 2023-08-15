@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Client\\fivem_advancedsync.Client.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Client\\fivem_advancedsync.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Client\\fivem_advancedsync.Client.csproj",
+        "projectName": "fivem_advancedsync.Client",
+        "projectPath": "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Client\\fivem_advancedsync.Client.csproj",
+        "packagesPath": "C:\\Users\\Exist\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Exist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net452"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net452": {
+            "targetAlias": "net452",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net452": {
+          "targetAlias": "net452",
+          "dependencies": {
+            "CitizenFX.Core.Client": {
+              "target": "Package",
+              "version": "[1.0.*, )"
+            }
+          },
+          "downloadDependencies": [
+            {
+              "name": "CitizenFX.Framework.Client",
+              "version": "[0.2.2, 0.2.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "CitizenFX.Framework.Client": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

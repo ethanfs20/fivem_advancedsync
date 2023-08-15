@@ -1,0 +1,2 @@
+C:\Users\Exist\Documents\Development Environment\FiveM Development\Resource Development\fivem_advancedsync\fivem_advancedsync\Client\bin\Release\net452\publish\fivem_advancedsync.Client.net.dll
+C:\Users\Exist\Documents\Development Environment\FiveM Development\Resource Development\fivem_advancedsync\fivem_advancedsync\Client\bin\Release\net452\publish\CitizenFX.Core.Client.dll

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yZY8BjoSR9B/QqQYxTykf8DmUjS/J1xqnv9zGaNJKAdAxkYVEZ5zVWqNXMlfVhOmCDwjvFnuoKeSyEm0p4bHjg==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Client\\fivem_advancedsync.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Exist\\.nuget\\packages\\citizenfx.core.client\\1.0.6370\\citizenfx.core.client.1.0.6370.nupkg.sha512",
+    "C:\\Users\\Exist\\.nuget\\packages\\citizenfx.framework.client\\0.2.2\\citizenfx.framework.client.0.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
