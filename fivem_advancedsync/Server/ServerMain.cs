@@ -49,7 +49,10 @@ namespace FiveMAdvancedSync.Server
             EventHandlers["fivem_advancedsync:server:Sync"] += new Action<Player>(OnRealTimeEvent);
 
             // Start the weather thread.
-            _ = WeatherThread();
+            if (_weatherUpdateInterval > 0)
+            {
+                _ = WeatherThread();
+            }
 
             RegisterCommand("changeweather", new Action<int, List<object>, string>((src, args, raw) =>
             {
