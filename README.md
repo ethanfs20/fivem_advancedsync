@@ -1,4 +1,4 @@
-# CoreTimeWeather: FiveM Weather Modification Script
+# FiveM Advanced Sync | Ethan4t0r
 
 This script provides enhanced weather control for FiveM servers, allowing for more immersive weather transitions and effects, including a special combined "BLIZZARD" for your snowy xmas fun?
 
