@@ -2,6 +2,8 @@ using System;
 using CitizenFX.Core;
 using static CitizenFX.Core.Native.API;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace FiveMAdvancedSync.Server
 {
@@ -48,6 +50,27 @@ namespace FiveMAdvancedSync.Server
 
             // Start the weather thread.
             _ = WeatherThread();
+
+            RegisterCommand("changeweather", new Action<int, List<object>, string>((src, args, raw) =>
+            {
+                if (args.Count > 0)
+                {
+                    string weatherType = args[0].ToString().ToUpper();
+                    if (WeatherTypes.Contains(weatherType))
+                    {
+                        ChangeWeather(weatherType);
+                        Debug.WriteLine($"Weather changed to {weatherType} by player {src}.");
+                    }
+                    else
+                    {
+                        Debug.WriteLine($"Invalid weather type provided by player {src}.");
+                    }
+                }
+                else
+                {
+                    Debug.WriteLine($"No weather type provided by player {src}.");
+                }
+            }), false);
         }
 
         // This is the event handler for the client event.
@@ -57,7 +80,7 @@ namespace FiveMAdvancedSync.Server
             player.TriggerEvent("fivem_advancedsync:client:Sync",
                                 now.Hour, now.Minute, now.Second,
                                 now.Day, now.Month, now.Year,
-                                _timeUpdateInterval, _weatherDefault);
+                                _timeUpdateInterval, _currentWeather);
         }
 
         // This is the method that gets the current time based on the timezone.
@@ -73,40 +96,37 @@ namespace FiveMAdvancedSync.Server
         {
             while (true)
             {
-                try
+                ChangeWeather("RANDOM");
+                await Delay(_weatherUpdateInterval);
+
+            }
+        }
+        // Method to change the weather based on if called by the command or thread to change randomly. The thread will pass a string "RANDOM" to the method to change randomly. The command will pass a string of the weather type.
+        private void ChangeWeather(string weather)
+        {
+
+            // Update _lastWeather with _currentWeather value
+            _lastWeather = _currentWeather;
+
+            // If the last weather was RAIN or THUNDER, then set the weather to CLEARING for an immersive EXP. ARRRPEEEE
+            if (_lastWeather == "RAIN" || _lastWeather == "THUNDER")
+            {
+                _currentWeather = "CLEARING";
+            }
+            else
+            {
+                // If the weather is RANDOM, then set the weather to a random weather type.
+                if (weather == "RANDOM")
                 {
-                    Debug.WriteLine("Updating weather");
-
-                    // Update _lastWeather with _currentWeather value
-                    _lastWeather = _currentWeather;
-
-                    // If the last weather was RAIN or THUNDER, then set the weather to CLEARING for an immersive EXP. ARRRPEEEE
-                    if (_lastWeather == "RAIN" || _lastWeather == "THUNDER")
-                    {
-                        _currentWeather = "CLEARING";
-                    }
-                    // else if the _currentWeather is "clearing" then set the weather to CLEAR
-                    else if (_currentWeather == "CLEARING")
-                    {
-                        _currentWeather = "CLEAR";
-                    }
-                    // otherwise change to anything else.
-                    else
-                    {
-                        _currentWeather = WeatherTypes[_random.Next(WeatherTypes.Length)];
-                    }
-
-                    TriggerClientEvent("fivem_advancedsync:client:Weather", _currentWeather);
+                    _currentWeather = WeatherTypes[_random.Next(WeatherTypes.Length)];
                 }
-                catch (Exception ex)
+                // Otherwise set the weather to the weather type passed in.
+                else
                 {
-                    Debug.WriteLine($"WeatherThread error: {ex.Message}");
-                }
-                finally
-                {
-                    await Delay(_weatherUpdateInterval);
+                    _currentWeather = weather;
                 }
             }
+            TriggerClientEvent("fivem_advancedsync:client:Weather", _currentWeather);
         }
     }
 }

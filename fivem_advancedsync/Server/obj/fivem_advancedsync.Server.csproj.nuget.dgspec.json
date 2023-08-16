@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj": {}
+    "C:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj": {
+    "C:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj",
         "projectName": "fivem_advancedsync.Server",
-        "projectPath": "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj",
+        "projectPath": "C:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj",
         "packagesPath": "C:\\Users\\Exist\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\obj\\",
+        "outputPath": "C:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

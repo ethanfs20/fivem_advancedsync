@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZASSg5jhvqyZVk3AJoJgCS+1J89d64VoOUZmR8eKu868ds4zdcsnijG4nP7iQNEyJNpCgHtYQoCHhVUY5r0zAQ==",
+  "dgSpecHash": "uieSWjIqDzUHNHzDapBGF2fhAIkl9ckclX1bwhydTEmMrzA56fGuHOwK8MV18/0HNfmc8zoZaCL5kxGEGbpzbw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj",
+  "projectFilePath": "C:\\Users\\Exist\\Documents\\Development Environment\\FiveM Development\\Resource Development\\fivem_advancedsync\\fivem_advancedsync\\Server\\fivem_advancedsync.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Exist\\.nuget\\packages\\citizenfx.core.server\\1.0.6335\\citizenfx.core.server.1.0.6335.nupkg.sha512",
     "C:\\Users\\Exist\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

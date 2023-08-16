@@ -6,6 +6,8 @@ namespace CoreTimeWeather.Client
 {
     public class ClientMain : BaseScript
     {
+        // variable to hold true or false if snow is enabled.
+        internal bool snowEnabled = false;
         public ClientMain()
         {
             // Register the event handler for when the players spawns.
@@ -54,10 +56,21 @@ namespace CoreTimeWeather.Client
             {
                 SetWeatherTypeOvertimePersist(weather, 10.0f);
                 ForceSnowPass(true);
+                SetForceVehicleTrails(true);
+                SetForcePedFootstepsTracks(true);
+                // Set snowenabled to true so we can use it later.
+                snowEnabled = true;
             }
             else
             {
                 SetWeatherTypeOvertimePersist(weather, 10.0f);
+                if (snowEnabled)
+                {
+                    ForceSnowPass(false);
+                    SetForceVehicleTrails(false);
+                    SetForcePedFootstepsTracks(false);
+                    snowEnabled = false;
+                }
             }
         }
     }
